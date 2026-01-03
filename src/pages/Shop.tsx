@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { products } from "../data/products";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
