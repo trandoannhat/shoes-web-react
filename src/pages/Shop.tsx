@@ -61,7 +61,7 @@ function Shop() {
   return (
     <div className="space-y-10">
       {/* Tạo banner lớn đầu page */}
-      <div className="h-64 bg-[url(bn3.jpg)] bg-cover bg-center flex items-center justify-center">
+      <div className="h-64 bg-[url(/bn3.jpg)] bg-cover bg-center flex items-center justify-center">
         <h1 className="text-white text-4xl font-bold">Shop shoes</h1>
       </div>
       {/* search */}
