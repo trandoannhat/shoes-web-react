@@ -1,4 +1,5 @@
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const product = [
   {
@@ -58,15 +59,17 @@ function ProductGrid() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {product.map((p, index) => (
           <div key={index} className="border rounded-2xl p-4">
-            <img
-              src={p.image}
-              alt="sports"
-              className="w-full h-48 object-cover rounded-2xl"
-            />
-
-            <h3 className="font-semibold mt-3">{p.name}</h3>
+            <Link to={"/shop"}>
+              <img
+                src={p.image}
+                alt="sports"
+                className="w-full h-48 object-cover rounded-2xl"
+              />
+            </Link>{" "}
+            <Link to={"/shop"}>
+              <h3 className="font-semibold mt-3">{p.name}</h3>
+            </Link>
             <p className="text-gray-500">{p.price}</p>
-
             <button className="mt-3 w-full bg-green-600 hover:bg-blue-700 text-white py-2 rounded-2xl flex items-center justify-center gap-2">
               <FaShoppingCart size={20} />
               Add to Cart

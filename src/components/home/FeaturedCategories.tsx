@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const categories = [
   { name: "Men Sneakers", image: "/cat1.webp" },
   { name: "Women Sneakers", image: "/cat2.webp" },
@@ -25,9 +27,11 @@ function FeaturedCategories() {
             />
 
             <div className="absolute inset-0 bg-slate-400/40 rounded-2xl flex items-center justify-center">
-              <span className="text-white text-xl font-semibold">
-                {category.name}
-              </span>
+              <Link to={`/shop`}>
+                <span className="text-white text-xl font-semibold">
+                  {category.name}
+                </span>
+              </Link>
             </div>
           </div>
         ))}

@@ -1,4 +1,5 @@
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -35,13 +36,16 @@ function BestSeller() {
       <div className="grid md:grid-cols-4 gap-6">
         {products.map((item, index) => (
           <div key={index} className="border rounded-2xl p-4">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-56 object-cover rounded-2xl"
-            />
-
-            <h3 className="font-semibold mt-3">{item.name}</h3>
+            <Link to={"/shop"}>
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-56 object-cover rounded-2xl"
+              />
+            </Link>
+            <Link to={"/shop"}>
+              <h3 className="font-semibold mt-3">{item.name}</h3>
+            </Link>
             <p className="text-gray-500">{item.price}</p>
             <button
               className="mt-4 w-full bg-green-600 hover:bg-blue-700 text-white py-2 rounded-2xl text-center 

@@ -134,7 +134,7 @@ function Shop() {
               </p>
               <div className="mt-auto flex gap-2">
                 <Link
-                  to={`/shop/${p.id}`}
+                  to={`/productdetail/${p.id}`}
                   className="flex flex-1 items-center font-bold justify-center gap-2 border border-emerald-800 text-green-600 rounded-2xl"
                 >
                   <FaEye /> Chi tiết
@@ -181,7 +181,7 @@ function Shop() {
               </p>
               <div className="mt-auto flex gap-2">
                 <Link
-                  to={`/shop/${p.id}`}
+                  to={`/productdetail/${p.id}`}
                   className="flex flex-1 items-center font-bold justify-center gap-2 border border-emerald-800 text-green-600 rounded-2xl"
                 >
                   <FaEye /> Chi tiết

@@ -5,7 +5,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-6">
         <div>
           <Link to="/">
-            <img src="./logo.jpg" className="h-12 w-auto" alt="logo shoes" />
+            <img src="/logo.jpg" className="h-12 w-auto" alt="logo shoes" />
           </Link>
           <p className="text-gray-600 mt-2 font-medium">
             Premium shoes for your daily style.
